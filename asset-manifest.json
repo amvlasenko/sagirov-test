@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sagirov-test/static/css/main.286bbdea.css",
+    "main.js": "/sagirov-test/static/js/main.6e470299.js",
+    "static/media/bg@2x.jpg": "/sagirov-test/static/media/bg@2x.0743f1d4439293f9d7e8.jpg",
+    "static/media/moon@2x.png": "/sagirov-test/static/media/moon@2x.c02da5a9dd18efcf0642.png",
+    "static/media/bg.jpg": "/sagirov-test/static/media/bg.f3e806964876d2b1928b.jpg",
+    "static/media/museosanscyrl-300.ttf": "/sagirov-test/static/media/museosanscyrl-300.b89d2aed072b957f2e03.ttf",
+    "static/media/museosanscyrl-100.ttf": "/sagirov-test/static/media/museosanscyrl-100.5363469df315b5a16118.ttf",
+    "static/media/museosanscyrl-700.ttf": "/sagirov-test/static/media/museosanscyrl-700.d517f62e41d9a4dab324.ttf",
+    "static/media/moon.png": "/sagirov-test/static/media/moon.f1482c753c6a72b1e9bf.png",
+    "static/media/button-line@2x.png": "/sagirov-test/static/media/button-line@2x.d41de1c24f2bf73f70fa.png",
+    "static/media/button-line.png": "/sagirov-test/static/media/button-line.d6db9c704b795adcf01e.png",
+    "index.html": "/sagirov-test/index.html",
+    "main.286bbdea.css.map": "/sagirov-test/static/css/main.286bbdea.css.map",
+    "main.6e470299.js.map": "/sagirov-test/static/js/main.6e470299.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.286bbdea.css",
+    "static/js/main.6e470299.js"
+  ]
+}
