@@ -6,7 +6,7 @@ import {useEffect, useState} from 'react';
 export function App() {
     const [vwidth, setVwidth] = useState(window.innerWidth);
     useEffect(() => {
-        subscribe();
+        return subscribe();
     }, []);
 
 
