@@ -1,0 +1,189 @@
+@import "../../assets/styles/constants.scss";
+
+.App {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  background-image: url("../../assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../assets/images/bg@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    overflow: scroll;
+    padding-bottom: 100px;
+  }
+
+
+  &:after {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("../../assets/images/button-line.png");
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-size: cover;
+    z-index: 2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../assets/images/button-line@2x.png");
+    }
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("../../assets/images/moon.png");
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-size: cover;
+    z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../assets/images/moon@2x.png");
+    }
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+
+    @media (max-width: $tablet-width) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .travel {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex: 1;
+      margin-top: 17vh;
+      height: calc(100vh - 100px - 17vh);
+
+
+      .textWrap {
+        position: relative;
+
+
+        h1 {
+          font-size: 53px;
+          font-weight: 700;
+          text-transform: uppercase;
+          z-index: 1;
+          @media (max-width: $tablet-width) {
+            font-size: 2.5rem;
+          }
+        }
+
+        p {
+          font-size: 25px;
+          font-weight: 300;
+          text-transform: lowercase;
+          @media (max-width: $tablet-width) {
+            font-size: 1.5rem;
+          }
+        }
+
+        &:before {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          content: "";
+          background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 63, 4, 1));
+          mix-blend-mode: darken;
+          @media (max-width: $tablet-width) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .startButton {
+    position: relative;
+    max-width: 180px;
+    margin-top: 90px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: rgba(21, 10, 1, 0.21);
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right top, #263e66 0, #09213d 36%, #111f2d 62%, #23599c 100%);
+    z-index: 3;
+
+    @media (max-width: $tablet-width) {
+      max-width: 90%;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: rgba(45, 45, 45, 0.53);
+      cursor: pointer;
+    }
+
+    &:before {
+      position: absolute;
+      bottom: -16px;
+      left: -16px;
+      width: 34px;
+      height: 34px;
+      content: "";
+      background-image: url("../../assets/images/shining-corner.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &:after {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      width: 34px;
+      height: 34px;
+      content: "";
+      background-image: url("../../assets/images/shining-corner.png");
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+  }
+
+  .startButtonMobile {
+    @extend .startButton;
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+
